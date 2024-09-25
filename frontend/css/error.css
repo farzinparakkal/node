@@ -1,0 +1,53 @@
+/* Basic CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container Style */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 404 Text Style */
+h1 {
+    font-size: 6em;
+    margin-bottom: 20px;
+    color: #ff6347;
+}
+
+/* Paragraph Style */
+p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Home Button Style */
+.home-button {
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff6347;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: #ff4500;
+}

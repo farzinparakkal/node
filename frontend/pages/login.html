@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/logo/are-you-in-logo-for-header.png" alt="Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="http://localhost:4000/">Home</a></li>
+            <li><a href="http://localhost:4000/about">About</a></li>
+            <li><a href="http://localhost:4000/contact" >Contact</a></li>
+            <li><a href="#" style="color: green;">Login</a></li>
+            <li><a href="http://localhost:4000/service">Service</a></li>
+        </ul>
+    </nav> <br>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <p class="signup-text">Don't have an account? <a href="#">Sign up here</a></p>
+        </form>
+    </div>
+</body>
+</html>
