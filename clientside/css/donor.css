@@ -1,0 +1,30 @@
+/* *{
+    background-color: skyblue;
+} */
+.dcont{
+    display: flexbox;
+    margin: auto;
+    width: 500px;
+    height: 700px;
+    /* background-color: aqua; */
+}
+.dcont h1{
+    text-align: center;
+}
+.form div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form input{
+    width: 400px;
+    height: 25px;
+}
+.formbtn button{
+    color: white;
+    background-color: blue;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}

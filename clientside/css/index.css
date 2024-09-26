@@ -1,0 +1,66 @@
+/* *{
+    background-color: green;
+} */
+nav{
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+nav button{
+    font-size: 20px;
+    color: white;
+    background-color: blue;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.cont h1{
+    text-align: center;
+}
+.cont1{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.conttext{
+    display: flex;
+    gap: 40px;
+}
+.conttext input{
+    width: 200px;
+    height: 30px;
+}
+.contbtn{
+    display: flex;
+    gap: 10px;
+}
+.editbtn{
+    font-size: 18px;
+    color: white;
+    background-color: blue;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.savebtn{
+    font-size: 20px;
+    color: white;
+    background-color: green;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+.delbtn{
+    font-size: 20px;
+    color: white;
+    background-color: red;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
