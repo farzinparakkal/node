@@ -8,7 +8,7 @@ const { error } = require("console")
 //connect
 const client=new MongoClient('mongodb://127.0.0.1:27017/')
 
-const app = http.createServer((req,res)=>{
+const app = http.createServer(async(req,res)=>{
     //DATABASE
     const db=client.db("DONOR")
 
@@ -63,6 +63,14 @@ const app = http.createServer((req,res)=>{
                 res.end(fs.readFileSync("../clientside/index.html"))
             }
         })
+    }
+    else if(path.pathname=='/getdonors' && req.method=='GET'){
+        const data=await collection.find().toArray()
+        const json_data=JSON.stringify(data)
+        console.log(json_data);
+        res.writeHead(200,{"Content-Type":"text/json"})
+        res.end(json_data)
+        
     }
 })
 app.listen(port)

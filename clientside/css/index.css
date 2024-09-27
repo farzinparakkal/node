@@ -1,6 +1,5 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
-    /* background-color: green; */
 }
 nav{
     text-align: right;
@@ -29,6 +28,8 @@ nav button a{
     display: flex;
     justify-content: center;
     gap: 30px;
+    align-items: center;
+    align-content: center;
 }
 .conttext{
     display: flex;
