@@ -8,5 +8,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "mongodb": "^6.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
