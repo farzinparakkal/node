@@ -3,7 +3,7 @@ const fs = require("fs")
 const url = require("url")
 port=4000
 const queryString=require("querystring")
-const {MongoClient}=require("mongodb")
+const {MongoClient, ObjectId}=require("mongodb")
 const { error } = require("console")
 //connect
 const client=new MongoClient('mongodb://127.0.0.1:27017/')
@@ -71,6 +71,27 @@ const app = http.createServer(async(req,res)=>{
         res.writeHead(200,{"Content-Type":"text/json"})
         res.end(json_data)
         
+    }
+    else if(path.pathname=='/delete' && req.method=='DELETE'){
+        console.log("..................DELETE......................")
+
+        let body=''
+        req.on('data',(chunks)=>{
+            body+=chunks.toString()
+            console.log(body)
+        })
+        req.on('end',async()=>{
+            let _id=new ObjectId(body)
+            console.log(_id)
+            await collection.deleteOne({_id}).then(()=>{
+                res.writeHead(200,{"Content-Type":"text/plain"})
+                res.end("Success")
+            }).catch(()=>{
+                res.writeHead(200,{"Content-Type":"text/plain"})
+                res.end("Failed")
+            })
+        })
+
     }
 })
 app.listen(port)
