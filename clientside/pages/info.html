@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Info</title>
+    <link rel="stylesheet" href="../css/info.css">
+</head>
+<body>
+    <div id="employee-info"></div>
+    <button onclick="goBack()">Back</button>
+    <button onclick="editEmployee()">Edit</button>
+    <button onclick="showConfirmBox()">Delete</button>
+
+    <!-- Confirmation Dialog -->
+    <div id="overlay"></div>
+    <div id="confirm-box">
+        <p>Are you sure you want to delete this employee?</p>
+        <div class="confirm-buttons">
+            <button onclick="confirmDelete()">Yes</button>
+            <button onclick="cancelDelete()">No</button>
+        </div>
+    </div>
+
+    <script src="../js/info.js"></script>
+</body>
+</html>

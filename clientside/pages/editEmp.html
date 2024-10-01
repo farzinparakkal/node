@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Employee</title>
+    <link rel="stylesheet" href="../css/editEmp.css">
+</head>
+<body>
+    <div id="edit-employee">
+        <h2>Edit Employee Details</h2>
+        <form id="edit-form">
+            <input type="text" placeholder="empId" name="empId" id="empId" readonly>
+            <input type="text" placeholder="Name" name="name" id="name">
+            <input type="text" placeholder="Description" name="des" id="des">
+            <input type="text" placeholder="Salary" name="salary" id="salary">
+            <input type="text" placeholder="Experience" name="exp" id="exp">
+            <input type="email" placeholder="Email" name="email" id="email">
+            <input type="text" placeholder="Phone" name="phone" id="phone">
+            <button type="submit">Update Employee</button>
+        </form>
+        <button onclick="goBack()">Back</button>
+    </div>
+
+    <script src="../js/editEmp.js"></script>
+</body>
+</html>
