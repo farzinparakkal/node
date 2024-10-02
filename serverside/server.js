@@ -66,6 +66,14 @@ const app = http.createServer(async(req,res)=>{
         res.writeHead(200,{"Content-Type":"text/js"})
         res.end(fs.readFileSync("../clientside/js/editEmp.js"))
     }
+    else if(path.pathname=='/image/icons8-user-90.png'){
+        res.writeHead(200,{"Content-Type":"image/png"})
+        res.end(fs.readFileSync("../clientside/image/icons8-user-90.png"))
+    }
+    else if(path.pathname=='/image/card1.png'){
+        res.writeHead(200,{"Content-Type":"image/png"})
+        res.end(fs.readFileSync("../clientside/image/card1.png"))
+    }
     else if(path.pathname=='/submit' && req.method=="POST"){
         let body=''
         req.on("data",(chunks)=>{

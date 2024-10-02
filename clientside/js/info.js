@@ -6,13 +6,13 @@ async function loadEmployee() {
     const data = await res.json();
 
     document.getElementById('employee-info').innerHTML = `
-        <div>ID: ${data.empId}</div>
-        <div>Name: ${data.name}</div>
-        <div>Description: ${data.des}</div>
-        <div>Salary: ${data.salary}</div>
-        <div>Experience: ${data.exp}</div>
-        <div>Email: ${data.email}</div>
-        <div>Phone: ${data.phone}</div>
+        <div>ID: ${data.empId}</div> <br>
+        <div>Name: ${data.name}</div> <br>
+        <div>Description: ${data.des}</div> <br>
+        <div>Salary: ${data.salary}</div> <br>
+        <div>Experience: ${data.exp}</div> <br>
+        <div>Email: ${data.email}</div> <br>
+        <div>Phone: ${data.phone}</div> <br>
     `;
 }
 

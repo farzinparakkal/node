@@ -1,3 +1,47 @@
+nav h1{
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+.container{
+    /* background-color: aqua; */
+    width: 70vw;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+}
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#employee-info{
+    font-size: 18px;
+}
+.btn button{
+    font-size: 18px;
+    padding: 7px 20px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+.btn{
+    display: flex;
+    gap: 40px;
+}
+.backbtn{
+    background-color: green;
+}
+.editbtn{
+    background-color: blue;
+
+}
+.delbtn{
+    background-color: red
+}
+
+
 #confirm-box {
     display: none;
     position: fixed;
@@ -20,5 +64,27 @@
     z-index: 9;
 }
 .confirm-buttons {
-    margin-top: 10px;
+    margin-top: 50px;
+}
+
+.yesbtn,.nobtn{
+    font-size: 18px;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.confirm-buttons{
+    display: flex;
+    gap: 20px;
+}
+#confirm-box p{
+    font-size: 20px;
+}
+.yesbtn{
+    background-color: green;
+}
+.nobtn{
+    background-color: red;
 }
